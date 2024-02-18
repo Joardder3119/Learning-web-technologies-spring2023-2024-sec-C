@@ -1,0 +1,25 @@
+<html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    <form method="post" action="login.php">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="username">Username:</label>
+            <input type="text" value="" name="username" title="Username must contain at least two alphanumeric characters, period, dash, or underscore only.">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" value="" name="password" required minlength="8"  title="Password must not be less than eight characters and contain at least one of the special characters (@, #, $, %).">
+            <br><br>
+            <label for="remember">Remember me:</label>
+            <input type="checkbox" value="" name="">
+            <br><br>
+            <input type="submit" value="Submit">
+            <br><br>
+            <p><a href="forgot_password.php">Forgot password?</a></p>
+        </fieldset>
+    </form>
+</body>
+</html>
