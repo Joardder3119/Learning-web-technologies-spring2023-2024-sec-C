@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Bar</title>
+    <style>
+        
+        .search-container {
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid; 
+            padding: 20px; 
+            border-radius: 10px; 
+            background-color: lightblue; 
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid;
+            font-size: 16px;
+            outline: none;
+        }
+        input[type="submit"] {
+            padding: 8px 16px;
+            border-radius: 5px;
+            border: none;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <form action="search" method="get">
+            <input type="text" placeholder="Search Job..." name="q">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</body>
+</html>

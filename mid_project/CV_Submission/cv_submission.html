@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV Upload</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+            background-color: lightblue; 
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: lightblue; 
+        }
+        input[type="submit"] {
+            background-color: blue; 
+            color: white; 
+            padding: 8px 16px; 
+            border: none; 
+            cursor: pointer; 
+        }
+        input[type="submit"]:hover {
+            background-color: darkblue; 
+        }
+    </style>
+</head>
+<body>
+  
+    <table>
+        <tr>
+            <th colspan="2">CV Upload Form</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form action="upload" method="post" enctype="multipart/form-data">
+                    <label for="cvFile">Select CV File:</label><br>
+                    <input type="file" name="cvFile" id="cvFile" accept=".pdf,.doc,.docx"><br><br>
+                    <input type="submit" value="Upload">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
